@@ -1,13 +1,21 @@
 import React from 'react'
 import Header from './header'
 import Display from './Display'
-
+import Footer from "./footer"
+import Note from "./Note"
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom"
 var App = ()=>{
     return(
 <div className="box">
+<Router>
 <Header/>
-<Display/>
+<Switch>
+             <Route path="/" component={Display} exact/>
+             <Route path="/note" component={Note}/>
+           </Switch>
 
+<Footer/>
+</Router>
      
       </div> 
     )
