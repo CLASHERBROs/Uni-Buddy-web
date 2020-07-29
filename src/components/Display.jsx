@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     },
 grid:{
     marginTop:4,
+    marginRight:0
 
 }
 
@@ -20,33 +21,33 @@ var Display = ()=>{
     return(
    
         <div className={classes.root}>
-        <Grid container spacing={6} className={classes.grid}
+        <Grid container spacing={8} className={classes.grid}
 
-justify="center"
+
   alignItems="center"
   >
-        <Grid item xs={4}>
+        <Grid item xs={12}  md={4}>
         <Link  to="/note">   <Tile/></Link>
           </Grid>
-          <Grid item xs={4}>
-              <Tile/>
+          <Grid item sm={12} md={4}>
+          <Link  to="/note">   <Tile/></Link>
               
           </Grid>
          
-          <Grid item xs={4}>
-              <Tile/>
+          <Grid item sm={12}  md={4}>
+          <Link  to="/note">   <Tile/></Link>
 
           </Grid>
-        <Grid item xs={4}>
-          <Tile/>
+        <Grid item sm={12} md={4}>
+        <Link  to="/note">   <Tile/></Link>
           </Grid>
-          <Grid item xs={4}>
-              <Tile/>
+          <Grid item sm={12} md={4}>
+          <Link  to="/note">   <Tile/></Link>
               
           </Grid>
          
-          <Grid item xs={4}>
-              <Tile/>
+          <Grid item sm={12} md={4}>
+          <Link  to="/note">   <Tile/></Link>
 
           </Grid>
          </Grid>

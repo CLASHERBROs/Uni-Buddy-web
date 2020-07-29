@@ -1,8 +1,9 @@
 import React from 'react'
 
-var Note = ()=>{
+var Note = (props)=>{
+ 
     return(
-<h1>"Hello i am a note"</h1>
+<h1>{props.title}</h1>
     )
 
 
